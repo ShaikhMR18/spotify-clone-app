@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify-Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="brand"><img src="./images/Spotify-Logo.png"  alt="spotify logo ">spotify</li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="songList">
+            <h1>Best Music</h1>
+            <div class="songItemContainer">
+                <div class="songItem">
+                    <img src="./images/download.jfif" alt="ply" >
+                    <span class="songName">tum bin</span>
+                    <span class="songListPlay">
+                        <span class="timestamp">05:20 <i id="0" class="fa-solid songItemPlay fa-circle-play"></i></span>
+                        </span>
+                </div>
+                <div class="songItem">
+                    <img src="./images/download.jfif" alt="ply" >
+                    <span  class="songName">Joker</span>
+                    <span class="songListPlay">
+                        <span class="timestamp">05:20 <i id="1" class="fa-solid songItemPlay fa-circle-play"></i></span>
+                        </span>
+                </div>
+                
+                
+            </div>
+
+        </div>
+        <div class="songBanner"></div>
+    </div>
+    <div class="bottom">
+        <input type="range" name="range" id="myProgressBar" value="0" min="0" max="100">
+        <div class="icons">
+            <!-- fontawesome icons -->
+            <i class="fa-solid songItemPlayfa-2x fa-backward" id="previous"></i>
+            <i class="fa-solid songItemPlayfa-2x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid songItemPlayfa-2x fa-forward" id="next"></i>
+            
+
+        </div>
+        <div class="songInfo">
+            <img src="./images/play.gif" width="40px" height="15px" alt="play icon" id="gif" >
+           <span id="masterSongName">tum bin </span> 
+        </div>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/b59431d62d.js" crossorigin="anonymous"></script>
+</body>
+</html>
